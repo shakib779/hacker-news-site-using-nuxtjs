@@ -1,27 +1,28 @@
 <template>
-  <TopStories />
+  <div>
+    <Pagination @childToParent="onChildClick" />
+    <PostList v-bind:startIndex="startIndex" />
+  </div>
 </template>
 
 <script>
-import TopStories from './../components/TopStories';
+const mixin = require('./../mixins/storyMixin').mixin;
+
 export default {
   middleware: "getAllItemIdForTopStories",
-  components: {
-    TopStories
-  },
-  data () {
+  mixins: [mixin],
+  head() {
     return {
-      title: "Top Stories"
-    }
-  },
-  head () {
-    return {
-      title: this.title,
+      title: "Top Stories",
       meta: [
-        { hid: 'It will show the top stories', name: 'It will show the top stories', content: 'Description of top stories' }
+        {
+          hid: "It will show the top stories",
+          name: "It will show the top stories",
+          content: "Description of top stories"
+        }
       ]
-    }
-  },
+    };
+  }
 };
 </script>
 

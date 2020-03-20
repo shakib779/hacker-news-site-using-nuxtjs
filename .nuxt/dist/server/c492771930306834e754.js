@@ -1,0 +1,1 @@
+exports.ids=[2],exports.modules={39:function(e,t,r){"use strict";r.r(t);var c={middleware:"invalidUrl"},n=r(1);var component=Object(n.a)(c,(function(){var e=this.$createElement;return(this._self._c||e)("div")}),[],!1,(function(e){}),"1c646031","b0e79bc6");t.default=component.exports}};
