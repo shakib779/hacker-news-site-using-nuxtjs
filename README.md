@@ -1,4 +1,4 @@
-# hacker
+# hacker news site using Nuxt.js
 
 > description
 
