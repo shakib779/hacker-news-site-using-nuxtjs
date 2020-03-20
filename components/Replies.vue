@@ -20,7 +20,7 @@
 
 <script>
 
-const itemGetter = require('./../mixins/mixin').itemGetter;
+const itemGetter = require('./../mixins/mixin').mixin;
 
 export default {
   name: "Replies",
